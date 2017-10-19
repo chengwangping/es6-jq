@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%= require('html-loader!../../components/header/head-common.html')  %>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+<body>
+    <%= require('html-loader!../../components/menu/nav.html')  %>
+    <%= require('html-loader!../../components/header/header.html')  %>
+    <div class="w">
+        <div class="banner-con">
+            <div class="loading"></div>
+        </div>
+    </div>
+    <div class="w">
+        首页内容区域
+    </div>
+    <%= require('html-loader!../../components/footer/footer.html')  %>
+</html>

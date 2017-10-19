@@ -1,0 +1,140 @@
+
+.app {
+    position: relative;
+    height: auto;
+    width: 100%;
+    min-height: 100%;
+    &:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        display: block;
+        width: inherit;
+        border: inherit;
+        content: "";
+    }
+    &.app-header-fixed{
+        .header-fixed-clear {
+            width: inherit;
+            height: 60px;
+            overflow: hidden;
+        }
+        .app-header{
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            background: $header;
+        }
+    }
+    .app-header {
+        width: 100%;
+        height: 60px;
+        & > button {
+            padding: 10px 17px;
+            font-size: 16px;
+            line-height: 30px;
+            text-decoration: none;
+            background-color: transparent;
+            border: none;
+        }
+        .navbar-brand {
+            float: left;
+            padding:10px 20px;
+            height: 60px;
+            width: 200px;
+            img {
+                max-height: 40px;
+                vertical-align: middle;
+            }
+        }
+        .navbar-collapse {
+            padding-left: 200px;
+            width: 100%;
+    
+            .navbar-text {
+                font-size: 22px;
+                color:$head-text;
+            }
+            .navbar-right {
+                margin-right:0;
+                ul {
+                    margin: 0;
+                }
+                .dropdown-toggle {
+                    padding: 10px;
+                    display: inline-block;
+                }
+                .avatar {
+                    width: 40px;
+                    display: inline-block;
+                    img{
+                        max-width: 100%;
+                        border-radius: 50%; 
+                    }
+                }
+            }
+        }
+    }
+    .app-aside {
+        float: left;
+        background: $aside;
+        width: 200px;
+        &:before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: inherit;
+            background: inherit;
+            border: inherit;
+            content: "";
+        }
+        .nav {
+            li {
+                &.active {
+                    background: $nav_active;
+                    a {
+                        color:$white;
+                    }
+                    .nav-sub  {
+                        height: auto;
+                        opacity: 1;
+                    }
+                }
+                a {
+                    padding: 10px 20px;
+                    color:$nav_a;
+                    &:hover ,&:focus{
+                         background: $nav_hover;
+                         color:$white;
+                    }
+                }
+                & > .nav-sub {
+                    background: $nav_active;
+                    height: 0;
+                    opacity: 0;
+                    overflow: hidden;
+                    li {
+                        a {
+                            color:$nav_a;
+                        }
+                        &.active {
+                            background: $nav_hover;
+                            a {
+                                color:$white;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    .app-content {
+        .view-page {
+            float: left;
+            height: auto;
+            min-height: 100%;
+            width: 100%; 
+        }   
+    }
+}

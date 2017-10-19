@@ -1,0 +1,99 @@
+/* Utils */
+.rel { position: relative; }
+.abs { position: absolute; }
+.oh { overflow: hidden; }
+.fr { float: right; }
+.fl { float: left; }
+.hide { display: none ; }
+.show { display: block;}
+.tc { text-align: center !important; }
+.tr { text-align: right !important; }
+.tl { text-align: left !important; }
+.vt { vertical-align: top !important; }
+.vm, .middle { vertical-align: middle !important; }
+.bold { font-weight: bold !important; }
+.clearfix { *zoom: 1; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.m0 { margin: 0 !important; }
+.m5 { margin: 5px !important; }
+.m10 { margin: 10px !important; }
+.m15 { margin: 15px !important; }
+.m20 { margin: 20px !important; }
+.mr0 { margin-right: 0 !important; }
+.mr5 { margin-right: 5px !important; }
+.mr10 { margin-right: 10px !important; }
+.mr15 { margin-right: 15px !important; }
+.mr20 { margin-right: 20px !important; }
+.ml0 { margin-left: 0 !important; }
+.ml5 { margin-left: 5px !important; }
+.ml10 { margin-left: 10px !important; }
+.ml15 { margin-left: 15px !important; }
+.ml20 { margin-left: 20px !important; }
+.mt0 { margin-top: 0 !important; }
+
+.mt5 { margin-top: 5px !important; }
+
+.mt10 { margin-top: 10px !important; }
+
+.mt20 { margin-top: 20px !important; }
+
+.mt30 { margin-top: 30px !important; }
+
+.mt50 { margin-top: 50px !important; }
+
+.mb5 { margin-bottom: 5px !important; }
+.mb10 { margin-bottom: 10px !important; }
+
+.mb20 { margin-bottom: 20px !important; }
+
+.p0 { padding: 0 !important; }
+
+.p5 { padding: 5px !important; }
+
+.p10 { padding: 10px !important; }
+
+.p20 { padding: 20px !important; }
+.pl10 { padding-left: 10px !important; }
+.pl20 { padding-left: 20px !important; }
+.pl30 { padding-left: 30px !important; }
+
+.pr10 { padding-right: 10px !important; }
+.pr20 { padding-right: 20px !important; }
+.pr30 { padding-right: 30px !important; }
+
+.pt10 { padding-top: 10px !important; }
+.pt20 { padding-top: 20px !important; }
+.pt30 { padding-top: 30px !important; }
+
+
+.fs12{font-size: 12px!important;}
+.fs14{font-size: 14px!important;}
+.fs16{font-size: 16px!important;}
+.fs18{font-size: 18px!important;}
+
+
+.error-tip{ 
+    color: #f00;
+}
+
+.ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mw100, .mw100 *{
+    max-width: 100% !important;
+ }
+.break-word,.break-word * {
+    word-wrap: break-word!important;
+}
+.flex-c{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.allAnimate {
+	transition: all 0.2s ease-in-out 0s;
+}

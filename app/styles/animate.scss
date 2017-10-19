@@ -1,0 +1,35 @@
+.view-page{
+    &.ng-leave{
+        display: none;
+    }
+    &.fade-in-up {
+        &.ng-enter {
+            animation: fadeInUp 0.5s;
+        }
+        &.ng-leave {
+            animation: fadeOutUp 0.5s;
+        }
+	}
+}
+@keyframes fadeOutUp {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+	100% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+}
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
